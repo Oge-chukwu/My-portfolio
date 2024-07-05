@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+
+.hero{
+    position: relative;
+    width: 100%;
+    height:100vh;
+    background-image:url(IMAGES/Sending\ Messages.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+nav{
+    margin:auto;
+    width:84%;
+    display:flex;
+    pading: 20px, 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: rgb(182, 148, 212);
+}
+
+
+
+button[type="button"] {
+    margin-top: 10px;
+    border-radius: 20px;
+    background: transparent;
+    border: 1px solid #5a3072;
+    padding: 10px 25px;
+    background-color: #5a3072;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+button[type="button"] a {
+    text-decoration: none;
+    color: #000000;
+}
+
+button[type="button"]:hover a {
+    color: #ffffff;
+}
+
+.detel {
+    color: #fbfdfc;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+h1{
+    font-size: 50px;
+    margin: 10px 0 20px;
+    line-height: 80px;
+}
+
+p{
+    font-size: 20px;
+}
+
+
+
+.bubbles img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+
+.bubbles{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+
+    }
+    50%{
+        
+        opacity: 1;
+        
+    }
+    70%{
+        
+        opacity: 1;
+        
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+        
+    }
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 25px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 2s;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 1s;
+    width: 25px;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 4.5s;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 6s;
+    width: 20px;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 7s;
+    width: 35px;
+}
+ .project{
+    background-image: url(IMAGES/Lily.jpg);
+    background-size:cover;
+    width: 100%;
+    
+    
+ }
+.project-heading{
+   text-align: center;
+    color: white;
+   padding-top: 20px;
+}
+
+.grid-container {
+    padding-top: 50px;
+    padding-bottom: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    
+  }
+
+  .video {
+    position: relative;
+    width: 90%;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+  }
+
+  .video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  
+#about {
+    background-color:#5a3072; /* Background color for the "About Me" section */
+    padding: 50px 20px; /* Adjust padding as needed */
+}
+
+.about-me {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px solid #3c1e4d;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-me h2 {
+    color: white; /* Heading color */
+}
+
+.about-me p {
+    font-size: 16px; /* Adjust font size as needed */
+    line-height: 1.5;
+    color: white; /* Text color */
+    margin-bottom: 20px; /* Adjust spacing between paragraphs */
+}
+
+
+
+#contact {
+    background-color: #5a3072;
+    padding: 50px 20px;
+    text-align: center;
+}
+#contact a{
+    color: #ffffff;
+}
+#contact h2 {
+    color: #ffffff;
+}
+
+#contact p {
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.footer {
+    background-color: #512868;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.social-links img{
+    width: 30px;
+    margin: 0 10px ;
+    cursor: pointer;
+    
+}
